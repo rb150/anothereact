@@ -14,7 +14,11 @@ class App extends Component {
       <p>This is really working!</p>
        {/*Able to use self closing tag for Person since we
         don't nest anything in between the element*/}
-      <Person /> 
+        {/*variables/attributes (name and age) are accessed
+        by using props in the component file*/}
+      <Person name="John" age="20"/> 
+      <Person name="Jim" age="21"/> 
+      <Person name="Jill" age="22"/> 
       </div>
     );
 

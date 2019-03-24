@@ -3,7 +3,9 @@ import React from 'react' //must always import react
 
 //component is function that returns jsx.  Written like any other function,
 //as long as it returns jsx.  If using jsx, must import react
-const person = () => {
+
+
+const person = (props) => { //react uses props object to access attributes
     return <p>I'm a person</p>
 }
 
