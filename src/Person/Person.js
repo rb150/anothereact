@@ -6,7 +6,9 @@ import React from 'react' //must always import react
 
 
 const person = (props) => { //react uses props object to access attributes
-    return <p>I'm a person</p>
+    //must use the name of the attributes (in the file that imports this file
+    //all attributes are under the props object
+    return <p>I'm a person and I am {props.name} and {props.age} years old</p>
 }
 
 export default person; //export function as default of the file in person constant which holds
