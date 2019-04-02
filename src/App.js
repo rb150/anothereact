@@ -27,6 +27,8 @@ class App extends Component {
         don't nest anything in between the element*/}
         {/*variables/attributes (name and age) are accessed
         by using props in the component file*/}
+        {/*send information from state object created above.
+        must use this to access objects in same class*/}
       <Person name={this.state.persons[0].name} age={this.state.persons[0].age}/> 
       <Person name={this.state.persons[1].name} age={this.state.persons[1].age}>My Hobbies: Racing</Person>
       <Person name={this.state.persons[2].name} age={this.state.persons[2].age}/> 
