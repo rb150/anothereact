@@ -17,12 +17,27 @@ class App extends Component {
     ]
   }
 
+  switchNameHandler = () => { //use suffix handler to indicate this method is an event handler
+    //console.log("was clicked");
+    //DON'T DO THIS: this.state.persons[0].name = 'Maximillian';, state is immutable and shouldnt be changed
+    //use this.setState() method instead instead
+    this.setState( {
+      persons: [ //array of objects
+        {name: 'Maximillian', age: 28},
+        {name: 'Manu Ginobli', age: 29},
+        {name: 'Stephanie', age: 27}
+      ]
+    })
+  };
+
   render() {
     return (
       <div className="App">
       <h1>Hi, I'm a React App</h1>
       <p>This is really working!</p>
-      <button>Switch Name</button>
+    {/*when calling switchNameHandler, do not use paranthesis otherise the metho will be called when page is loaded
+    We want to reference the method instead, so don't use parenthesis */}
+      <button onClick={this.switchNameHandler}>Switch Name</button>{/*method onClick in jsx same as onclick in regular html*/}
        {/*Able to use self closing tag for Person since we
         don't nest anything in between the element*/}
         {/*variables/attributes (name and age) are accessed
