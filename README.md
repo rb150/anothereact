@@ -69,3 +69,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 
 1. Video 44: we want to have the switchNameHandler() method able to work when we click the paragraph as opposed to the button.  In order to do this we pass the reference to the method as a prop in the main component
+
+2. In order to pass a value to our switchNameHandler method, we need to use the bind() method on the handler method connected to the onClick method (in button element). In the bind method, the first parameter we use is "this" referring to the method we are binded to (in this case switchNameHandler) and the value of whatever we want to pass into the method.
