@@ -66,3 +66,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+1. Video 44: we want to have the switchNameHandler() method able to work when we click the paragraph as opposed to the button.  In order to do this we pass the reference to the method as a prop in the main component
