@@ -50,7 +50,7 @@ class App extends Component {
       <Person 
         name={this.state.persons[1].name} 
         age={this.state.persons[1].age}
-        click={this.switchNameHandler}>My Hobbies: Racing</Person>{/*pass reference to switchNameHandler as prop to use it in functional component*/}
+        click={this.switchNameHandler.bind(this, "Alexios")}>My Hobbies: Racing</Person>{/*pass reference to switchNameHandler as prop to use it in functional component*/}
       <Person 
         name={this.state.persons[2].name} 
         age={this.state.persons[2].age}/> 
