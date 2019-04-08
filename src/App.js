@@ -37,7 +37,7 @@ class App extends Component {
       <p>This is really working!</p>
     {/*when calling switchNameHandler, do not use paranthesis otherise the metho will be called when page is loaded
     We want to reference the method instead, so don't use parenthesis */}
-      <button onClick={this.switchNameHandler.bind(this, "James Bond")}>Switch Name</button>{/*use bind to be able to pass value into handler method*/}
+      <button onClick={() => this.switchNameHandler("SUPER DUPER")}>Switch Name</button>{/*use anonymous function that returns handler result to pass value into handler method*/}
        {/*Able to use self closing tag for Person since we
         don't nest anything in between the element*/}
         {/*variables/attributes (name and age) are accessed
