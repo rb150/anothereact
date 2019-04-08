@@ -44,16 +44,9 @@ class App extends Component {
         by using props in the component file*/}
         {/*send information from state object created above.
         must use this to access objects in same class*/}
-      <Person 
-        name={this.state.persons[0].name} 
-        age={this.state.persons[0].age}/> 
-      <Person 
-        name={this.state.persons[1].name} 
-        age={this.state.persons[1].age}
-        click={this.switchNameHandler}>My Hobbies: Racing</Person>{/*pass reference to switchNameHandler as prop to use it in functional component*/}
-      <Person 
-        name={this.state.persons[2].name} 
-        age={this.state.persons[2].age}/> 
+      <Person name={this.state.persons[0].name} age={this.state.persons[0].age}/> 
+      <Person name={this.state.persons[1].name} age={this.state.persons[1].age}>My Hobbies: Racing</Person>
+      <Person name={this.state.persons[2].name} age={this.state.persons[2].age}/> 
       </div>
     );
 
@@ -66,3 +59,4 @@ class App extends Component {
 }
 
 export default App;
+ 
