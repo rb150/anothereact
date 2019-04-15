@@ -7,7 +7,7 @@ import React from 'react' //must always import react
 
 const person = (props) => { //react uses props object to access attributes
     //curly braces are used to make an element dynamic
-    //must use the name of the attributes (in the file that imports this file
+    //must use the name of the attributes (in the file that imports this file)
     //all attributes are under the props object
 
     //If we want have the names and age change using switchNameHandler() when the paragraph is clicked
@@ -22,6 +22,7 @@ const person = (props) => { //react uses props object to access attributes
 {/*props.children is reserved.  Nothing was passed but this reserved
 keyword will take whatever is pass between the opening and closing tag
 of the element in the main component*/}
+    <input type="text" onChange={}/>
     <p>{props.children}</p>
     </div>
     )

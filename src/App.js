@@ -30,6 +30,10 @@ class App extends Component {
     })
   };
 
+  nameChangeHandler = (event) => {
+    
+  }
+
   render() {
     return (
       <div className="App">

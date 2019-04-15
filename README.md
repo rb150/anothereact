@@ -75,3 +75,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 3. This can also be done to the "click" property that sends a reference to the switchNameHandler method through the props.
 
 4. Another way to pass a parameter to pass an anonymous function to the onClick method.  WHen passing an anonymous function with arrow notation on one line, it will automatically return something.  In this case, we want to return the switchNameHandler() method (unlike previously when we just wanted to reference the method).  The return will return the function call.  THe anonymous function will be executed upon a click and will return the result of the handler function getting executed.  This allows us to easily pass our parameters into the function.
+
+5. video 45: 
